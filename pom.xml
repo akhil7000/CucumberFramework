@@ -21,7 +21,12 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
+				<version>3.7.0</version>
+				<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+				</configuration>
+				
 				<executions>
 					<execution>
 						<phase>generate-sources</phase>
@@ -84,7 +89,7 @@
 				<version>9.2.10.v20150310</version>
 				<configuration>
 					<webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>
-					<stopKey>stop</stopKey>
+					<stopKey>stop</stopKey>  
 					<stopPort>1234</stopPort>
 				</configuration>
 			</plugin>
